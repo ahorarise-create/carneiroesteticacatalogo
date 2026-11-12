@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121212">
+  <meta name="description" content="Catálogo de serviços e preços da Carneiro Estética Automotiva.">
+  <title>Carneiro | Estética Automotiva Premium</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+    :root { --accent: #FFD700; --dark: #121212; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Archivo', sans-serif; background: var(--dark); color: white; overflow-x: hidden; }
+    .font-display { font-family: 'Archivo Black', sans-serif; }
+    .bg-car-bw {
+      background-image: linear-gradient(to right, rgba(18,18,18,.9) 30%, rgba(18,18,18,.4) 100%), url('https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/0c8b6fe3-1c5b-446c-b2da-c9de284db67c/1794498690461-9a4fa968/civic_en_processo.jpeg');
+      background-size: cover; background-position: center; background-attachment: fixed; filter: grayscale(100%);
+    }
+    .text-accent { color: var(--accent); }
+    .bg-accent { background-color: var(--accent); }
+    .border-accent { border-color: var(--accent); }
+    .price-tag { font-family: 'Archivo Black', sans-serif; color: var(--accent); white-space: nowrap; }
+    .skew-x-custom { transform: skewX(-12deg); }
+    .skew-x-reverse { transform: skewX(12deg); }
+    a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+    @media (max-width: 640px) {
+      .skew-x-custom { transform: none; }
+      .skew-x-reverse { transform: none; }
+      .bg-car-bw { background-attachment: scroll; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen relative">
+    <div aria-hidden="true" class="fixed inset-0 bg-car-bw opacity-40 z-0"></div>
+    <div class="relative z-10">
+      <header class="p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div>
+          <h1 class="text-5xl md:text-7xl font-display uppercase tracking-tighter leading-none">Carneiro<span class="text-accent">.</span></h1>
+          <div class="bg-accent text-black font-black px-4 py-1 inline-block skew-x-custom mt-2">
+            <span class="block skew-x-reverse uppercase text-sm tracking-widest">Estética Automotiva</span>
+          </div>
+        </div>
+        <a href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20est%C3%A9tica%20automotiva." target="_blank" rel="noopener noreferrer" class="border-4 border-accent text-accent px-6 py-3 md:px-8 md:py-4 font-black hover:bg-accent hover:text-black transition-all uppercase tracking-widest">Agendar Agora</a>
+      </header>
+
+      <section class="px-6 md:px-8 py-20 md:py-40">
+        <div class="max-w-4xl">
+          <h2 class="text-6xl md:text-9xl font-display uppercase leading-[0.8] mb-8">Serviços<br><span class="italic text-transparent" style="-webkit-text-stroke: 2px white;">Premium</span></h2>
+          <p class="text-xl md:text-2xl text-gray-300 max-w-xl font-medium">Performance visual e proteção extrema para sua máquina. Consulte nossa tabela de preços.</p>
+        </div>
+      </section>
+
+      <main class="px-4 md:px-12 pb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-display uppercase mb-6">1. Lavagem técnica de carros</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center gap-3 border-b border-white/10 pb-3"><span class="text-gray-300">Hatch e sedã</span><span class="text-2xl price-tag">R$ 80,00</span></div>
+              <div class="flex justify-between items-center gap-3"><span class="text-gray-300">SUV e picape</span><span class="text-2xl price-tag">R$ 90,00</span></div>
+            </div>
+          </section>
+
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-display uppercase mb-6">2. Lavagem detalhada de carros</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center gap-3 border-b border-white/10 pb-3"><span class="text-gray-300">Hatch e sedã</span><span class="text-2xl price-tag">R$ 150,00</span></div>
+              <div class="flex justify-between items-center gap-3"><span class="text-gray-300">SUV e picape</span><span class="text-2xl price-tag">R$ 180,00</span></div>
+              <p class="pt-2 text-xs text-accent uppercase font-bold tracking-widest">Proteção de pintura inclusa.</p>
+            </div>
+          </section>
+
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-display uppercase mb-6">3. Lavagem de motos</h3>
+            <div class="grid grid-cols-[1.2fr_1fr_1fr] gap-x-2 gap-y-4 text-sm items-center">
+              <span class="font-black border-b border-white/20 pb-2">Categoria</span><span class="font-black border-b border-white/20 pb-2 text-center">Técnica</span><span class="font-black border-b border-white/20 pb-2 text-right">Detalhada</span>
+              <span class="text-gray-300">Até 600 cilindradas</span><span class="font-bold text-center">R$ 80,00</span><span class="font-bold text-right">R$ 120,00</span>
+              <span class="text-gray-300">Acima de 600 cilindradas</span><span class="font-bold text-center">R$ 70,00</span><span class="font-bold text-right">R$ 150,00</span>
+            </div>
+          </section>
+
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8 flex justify-between items-center gap-4">
+            <h3 class="text-2xl md:text-3xl font-display uppercase">4. Limpeza de motor</h3><span class="text-2xl price-tag">R$ 150,00</span>
+          </section>
+
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-display uppercase mb-6">5. Higienização interna</h3>
+            <div class="space-y-4 text-sm md:text-base">
+              <div class="flex justify-between gap-3"><span class="text-gray-300">Higienização interna completa</span><span class="text-accent font-display whitespace-nowrap">R$ 600,00</span></div>
+              <div class="flex justify-between gap-3"><span class="text-gray-300">Higienização de banco de tecido</span><span class="text-accent font-display whitespace-nowrap">R$ 250,00</span></div>
+              <div class="flex justify-between gap-3"><span class="text-gray-300">Higienização de banco de couro</span><span class="text-accent font-display whitespace-nowrap">R$ 150,00</span></div>
+              <div class="flex justify-between gap-3"><span class="text-gray-300">Higienização de teto</span><span class="text-accent font-display whitespace-nowrap">R$ 150,00</span></div>
+              <div class="flex justify-between gap-3"><span class="text-gray-300">Higienização de carpete</span><span class="text-accent font-display whitespace-nowrap">R$ 150,00</span></div>
+            </div>
+          </section>
+
+          <section class="bg-accent text-black p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-display uppercase mb-6">6. Polimentos</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center gap-3 border-b border-black/20 pb-3"><span class="font-bold uppercase">Polimento comercial</span><span class="text-xl font-display whitespace-nowrap">R$ 400,00</span></div>
+              <div class="flex justify-between items-center gap-3"><span class="font-bold uppercase">Polimento técnico</span><span class="text-xl font-display whitespace-nowrap">R$ 700,00</span></div>
+            </div>
+          </section>
+
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-display uppercase mb-6">7. Proteção e vitrificação</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center gap-3"><span class="text-gray-300">Cristalização de vidros</span><span class="text-accent font-display whitespace-nowrap">R$ 300,00</span></div>
+              <div class="border-t border-white/10 pt-4"><p class="text-xs text-accent font-black uppercase mb-1">Vitrificação de pintura</p><p class="text-xl md:text-2xl font-display">A partir de R$ 1.500,00</p></div>
+            </div>
+          </section>
+
+          <section class="bg-zinc-900/90 border border-white/10 p-6 md:p-8 flex justify-between items-center gap-4">
+            <h3 class="text-2xl md:text-3xl font-display uppercase">8. Revitalização de faróis (par)</h3><span class="text-2xl price-tag">R$ 150,00</span>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
